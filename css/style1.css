@@ -40,7 +40,7 @@
 body {
     margin: 0;
     background-image: url(../img/backgraund.svg);
-    background-position: absolute;
+    background-position: fixed;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -710,7 +710,13 @@ body {
         height: calc(65px + 28 * (100vw / 1366));
         width: 74%;
         height: 50%;
-        top: 80%;
+        top: 65%;
+        z-index: 2;
+    }
+
+    .text:hover {
+        color: #FFD369;
+
     }
 
     .title_text {
@@ -742,6 +748,7 @@ body {
         height: calc(65px + 28 * (100vw / 1366));
         left: calc(-9% + 8 * (100vw / 1366));
         margin-top: 50px;
+        margin-bottom: 30px;
     }
 
     .wooden_top_img {
@@ -754,9 +761,9 @@ body {
 
     .wood_img {
         width: calc(76% + 24 * (100vw / 1366));
-        height: calc(65px + 28 * (100vw / 1366));
-        left: calc(13% + 8 * (100vw / 1366));
-        right: calc(12% + 8 * (100vw / 1366));
+        height: calc(120px + 28 * (100vw / 1366));
+        margin-left: 12%; 
+        z-index: 1;
     }
 
     .wood_img:hover .wood_caption {
@@ -766,9 +773,8 @@ body {
     }
 
     .wooden {
-        height: calc(160% + 28 * (100vw / 1366));
-        left: calc(-12% + 12 * (100vw / 1366));
-        right: calc(-12% + 12 * (100vw / 1366));
+        height: calc(100% + 28 * (100vw / 1366));
+        z-index: 2;
     }
 
     .wood_img_last{
@@ -870,5 +876,12 @@ body {
         margin-top: 3%;
         margin-right: -3%;
     }
+
+    .wood_img:hover .text {
+        color: #FFD369;
+    }
+    
+
+
 }
 
