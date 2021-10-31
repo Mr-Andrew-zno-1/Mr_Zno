@@ -821,7 +821,7 @@ body {
         width: 100%;
         height: 100%;
         left: 0;
-        bottom: calc(-55% + (25 + 25 * 0.7) * ((100vw - 320px) / 1366));
+        bottom: calc(-65% + (25 + 25 * 0.7) * ((100vw - 320px) / 1366));
         z-index: -1;
     }
     
