@@ -43,6 +43,8 @@ body {
     background-position: fixed;
     background-size: cover;
     background-attachment: fixed;
+    position: relative;
+    z-index: -3;
 }
 
 .wrapper{
@@ -570,7 +572,7 @@ body {
     width: 100%;
     height: 100%;
     left: 0;
-    bottom: -50%;
+    bottom: calc(-5% + (15 + 15 * 0.7) * ((100vw - 320px) / 1920));;
     z-index: -1;
 
 }
@@ -804,7 +806,7 @@ body {
     }
 
     .rope_img_last {
-        margin-bottom: 120px;
+        margin-bottom: 150px;
         margin-top: 80px;
     }
 
@@ -813,7 +815,7 @@ body {
         width: 100%;
         height: 100%;
         left: 0;
-        bottom: -60%;
+        bottom: calc(-52% + (25 + 25 * 0.7) * ((100vw - 320px) / 1366));
         z-index: -1;
     }
     
@@ -823,7 +825,7 @@ body {
         left: 25%;
         bottom: 0;
         width: 100%;
-        height: 105%;
+        height: 145%;
     }
     
     .flashlight_2._active {
@@ -1052,7 +1054,7 @@ body {
     }
 
     .rope_img_last {
-        margin-bottom: 120px;
+        margin-bottom: 170px;
         margin-top: 80px;
     }
 
@@ -1062,7 +1064,7 @@ body {
         width: 100%;
         height: 100%;
         left: 0;
-        bottom: -50%;
+        bottom: -35%;
         z-index: -1;
         pointer-events: none;
     }
