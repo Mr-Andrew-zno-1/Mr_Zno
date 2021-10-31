@@ -43,7 +43,6 @@ body {
     background-position: fixed;
     background-size: cover;
     background-attachment: fixed;
-    overflow-x: hidden;
 }
 
 .wrapper{
