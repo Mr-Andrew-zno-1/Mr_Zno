@@ -716,12 +716,14 @@ body {
     background-color: #32353D;
 }
 
-@media (max-width: 769px) {
-
+@media only screen and (max-device-width: 480px) {
     html {
-        height: calc(100% + 60px);
-        min-height: calc(100% + 60px);
-      }
+      height: calc(100% + 60px);
+      min-height: calc(100% + 60px);
+    }
+}
+
+@media (max-width: 769px) {
 
     .text {
         font-size: calc(19.5px + (20 + 20 * 0.7) * ((100vw - 320px) / 1366));
