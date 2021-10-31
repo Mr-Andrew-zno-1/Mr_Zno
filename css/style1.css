@@ -716,7 +716,7 @@ body {
 }
 
 @media only screen and (max-device-width: 480px) {
-    html {
+    body {
       height: calc(100% + 60px);
       min-height: calc(100% + 60px);
     }
@@ -821,7 +821,7 @@ body {
         width: 100%;
         height: 100%;
         left: 0;
-        bottom: calc(-48% + (25 + 25 * 0.7) * ((100vw - 320px) / 1366));
+        bottom: calc(-55% + (25 + 25 * 0.7) * ((100vw - 320px) / 1366));
         z-index: -1;
     }
     
