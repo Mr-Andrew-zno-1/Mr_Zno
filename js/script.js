@@ -42,3 +42,48 @@ $(document).ready(function() {
     }
 });
 
+
+/* Відкрити зміст*/
+
+$(document).ready(function() {
+    $('.box_wrapper').click(function(event) {
+        $('.right_menu,.right_menu_cont,.right_trg_1,.right_trg_2,.right_menu_background,.close_button').toggleClass('--active');
+        $('body').toggleClass('lock');    
+    });
+});
+
+/* Закрити зміст*/
+
+$(document).ready(function() {
+    $('.close_button').click(function(event) {
+        $('.right_menu,.right_menu_cont,.right_trg_1,.right_trg_2,.right_menu_background,.close_button').removeClass('--active');    
+        $('body').removeClass('lock');    
+    });
+});
+
+/* Закрити зміст по-за межами дів*/
+
+$(document).mouseup(function (e){  
+    var div = $('.right_menu_cont');
+    if (!div.is(e.target) && div.has(e.target).length === 0) {  
+            $('.right_menu,.right_menu_cont,.right_trg_1,.right_trg_2,.right_menu_background,.close_button').removeClass('--active');
+            $('body').removeClass('lock');      
+    }
+  });
+
+  $(document).ready(function() {
+    $('.button_ph').click(function(event) {
+        const parent = $(this).parent()
+
+        if (parent.hasClass('photo_parent--active')) {
+        parent.removeClass('photo_parent--active');
+        
+    } else {
+        $('.photo_parent').removeClass('photo_parent--active')
+        parent.addClass('photo_parent--active')
+    }
+    
+    });
+});
+
+
